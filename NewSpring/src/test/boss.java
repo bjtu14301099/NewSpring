@@ -1,0 +1,18 @@
+package test;
+
+import AC.Autowired;
+
+public class boss {
+  private office office;
+  private car car;
+  
+  @Autowired
+  public boss(car car ,office office){
+      this.car = car;
+      this.office = office ;
+  }
+
+  public String tostring(){
+	  return "this boss has "+car.toString()+"and in "+office.tostring();
+  }
+}
